@@ -1,0 +1,212 @@
+.middle-box1 {
+    background: url(images/bg-notice.png);
+    padding: 30px 30px 30px 30px;
+    width: 80%;
+    margin-right: 2.3%;
+    border-radius: 50px 20px 20px 20px;
+    background-size: 100% 100%;
+}
+.middle-content > div {
+    height: 290px;
+    float: left;
+}
+.middle-box1 dl {
+    width: 100%;
+    margin-top: 0px;
+    text-align: center;
+    animation: dll 13s;
+}
+@keyframes dll {
+    from {
+        left: -500px;
+        opacity: 0.5;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes dllback {
+    from {
+        left: 0px;
+        opacity: 1;
+    }   
+    to {
+        left: -500px;
+        opacity: 0;
+    }
+}
+.middle-box1 dl dt {
+    font-size: 17px;
+    line-height: 32px;
+    display: inline-block;
+    color: #3a3a4a;
+    font-weight: 700;
+    padding-left: 59px;
+    background: url(images/ico-notice.png) no-repeat left center;
+    text-align: left;
+}
+.middle-box1 dl dt strong {
+    font-size: 23px;
+    display: block;
+}
+.middle-box1 dl dd {
+    display: block;
+    border-top: 1px solid #edfd03;
+    padding-top: 50px;
+    margin-top: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.middle-box1 dl dd a {
+    display: block;
+    margin-top: 15px;
+    position: relative;
+    animation: dll 3s ease-out;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.middle-box1 dl dd a:first-child {
+    margin-top: 0;
+}
+.middle-box1 dl dd a p {
+    height: 27px;
+    font-size: 16px;
+    color: #3a3a4a;
+    display: inline-block;
+    letter-spacing: -1px;
+    transition: all 0.2s linear;
+}
+.middle-box1 dl dd a p:hover {
+    transform: scale(2.2);
+}
+
+
+
+.title1 {
+    margin-left: 5px;
+    font-size: 21px;
+    color: #3a3a4a;
+    margin-bottom: 10px;
+    font-weight: 700;
+    transition: all 0.2s linear;
+}
+.bottom-box2-top {
+    width: 80%;
+    position: absolute;
+    top: 350px;
+    left: 100px;
+}
+.bottom-box2-top span em {
+    font-weight: 700;
+    color: #3a3a4a;
+    font-size: 21px;
+    font-family: 'NanumBold';
+}
+.bottom-box2-bottom {
+    width: 210px;
+    height: 240px;
+    top: 100px;
+    left: 10px;
+    overflow: hidden; 
+    position: relative;
+}
+.bottom-box2-bottom ul {
+    width: 2215px;
+    position: relative;
+    transition-duration: 0s;
+}
+.bottom-box2-bottom ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 210px;
+}
+.bottom-box2-bottom li img {
+    height: 190px;
+    width: 100%;
+    border-radius: 14px;
+}
+
+.bottom-content > div .title {
+    margin-left: 60px;
+    display: block;
+    font-size: 21px;
+    color: #3a3a4a;
+    margin-bottom: 19px;
+    font-weight: 700;
+}
+.bottom-box2-box1 {
+    background: #fff url(images/bg-organization.png) no-repeat right top;
+    border-radius: 20px 55px 20px 20px;
+    margin-bottom: 30px;
+}
+.bottom-box2 > div {
+    width: 300px;
+    height: 155px;
+    border: 1px solid #e1e3e6;
+    padding: 33px 39px 0;
+}
+.bottom-box2-box1 a, .bottom-box2-box2 a {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    display: block;
+}
+.bottom-box2-box1 dd {
+    color: #6e7174;
+}
+.bottom-box2-box2 {
+    background: #fff url(images/bg-center.png) no-repeat right bottom;
+    border-radius: 55px 20px 20px 20px;
+}
+
+
+
+
+.bottom-box3 {
+    background: url(images/musicawards/awards1.PNG);
+    width: 70%;
+    height: 370px;
+    background-color: #fff;
+    border: 1px solid #e1e3e6;
+    padding: 33px 39px 0;
+    border-radius: 20px 20px 55px 20px;
+}
+.bottom-box3-top {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    padding-right: 82px;
+}
+.bottom-box3-top span em {
+    font-weight: 700;
+    color: #3a3a4a;
+    font-size: 21px;
+    font-family: 'NanumBold';
+}
+.bottom-box3-bottom {
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+}
+.bottom-box3-bottom ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 250px;
+    height: 500px;
+}
+.bottom-box3-bottom li img {
+    height: 250px;
+    width: 100%;
+    border-radius: 14px;
+}
+.bottom-content > div .title5 {
+    margin-left: 60px;
+    display: block;
+    font-size: 21px;
+    color: #3a3a4a;
+    margin-bottom: 19px;
+    font-weight: 700;
+}

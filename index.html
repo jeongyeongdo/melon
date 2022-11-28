@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멜론</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/indexMobile.css">
+    <link rel="icon" href="images/eba99ceba1a020ec9584ec9db4ecbd982e706e67.png">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <!-- wrapper 영역 시작 -->
+    <div id="wrapper">
+        <!-- 헤더 영역 시작 -->
+        <header>
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="images/logo/melonlogo.jpg" alt="melon">
+                </a>
+            </h1>
+            <ul class="infoLink">
+                <li><a href="use.html">이용권구매</a></li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+            <nav role="navigation">
+                <h2 class="hidden">메인메뉴</h2>
+                <ul class="mainMenu">
+                    <li><a href="#">멜론차트</a>
+                    </li>
+                    <li><a href="#">최신음악</a>
+                    </li>
+                    <li><a href="#">장르음악</a>
+                    </li>
+                    <li><a href="#">멜론DJ</a>
+                    </li>
+                    <li><a href="#">멜론TV</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 헤더 영역 종료 -->
+
+    <div id="contentsArea">
+            <!-- 메인 콘텐츠 영역 시작 -->
+        <div id="infoArea">
+            <!-- 검색 폼, 인기 차트 영역 시작 -->
+            <div class="search">
+                <h2 class="hidden">검색</h2>
+                <form>
+                    <div class="form-write">
+                        <input title="검색어를 입력해주세요." id="query_main" name="query_main" type="text"
+                        placeholder="무엇을 찾고 계시나요?">
+                        <div class="search-box" id="ark"></div>
+                    </div>
+                    <a href="#" class="button-search">검색</a>
+                </form>
+            </div>
+            <div class="hotLink">
+                <h2>인기<span>차트</span></h2>
+                <ol>
+                    <li class="no1">
+                        <a href="#">호미들</a>
+                        <em class="up">상승</em>
+                    </li>
+                    <li class="no2">
+                        <a href="#">방탄소년단</a>
+                        <em class="down">하락</em>
+                    </li>
+                    <li class="no3">
+                        <a href="#">수퍼비</a>
+                        <em class="stop">유지</em>
+                    </li>
+                    <li class="no4">
+                        <a href="#">저스디스</a>
+                        <em class="up">상승</em>
+                    </li>
+                </ol>
+                <a href="#" class="more" title="인기사이트 더보기">다른 차트 더보기</a>
+                <!-- <div class="control1">
+                    <div class="direction1">
+                        <a class="bx-prev" href="#">prev</a>
+                        <a class="bx-next" href="#">Next</a> 
+                    </div>
+                    <div class="auto1">
+                        <a class="stop active" href="#">Stop</a>
+                    </div>
+                </div> !-->
+            </div>
+        </div>
+        <!-- 검색 폼, 인기 차트 영역 종료 -->
+
+
+        <!-- 광고 영역 시작 -->
+        <div id="advertiseArea">
+            <h2 class="hidden">이벤트 광고 영역</h2>
+            <div class="sliderAdvertiseImage">
+                <img src="images/banner/banner4.PNG" class="advertiseImage" alt="banner">
+                <img src="images/banner/image2.PNG" class="advertiseImage" alt="banner">
+                <img src="images/banner/image1.PNG" class="advertiseImage" alt="banner">
+                <img src="images/banner/bannner3.webp" class="advertiseImage" alt="banner">
+            </div>
+            <div class="btnAd">
+                <div id="btnPrevAd" role="button">이전 광고 보기</div>
+                <div id="btnNextAd" role="button">다음 광고 보기</div>
+            </div>
+            <div class="underBarArea">
+                <div id="adUnderBar1" class="adUnderBar"></div>
+                <div id="adUnderBar2" class="adUnderBar"></div>
+                <div id="adUnderBar3" class="adUnderBar"></div>
+                <div id="adUnderBar4" class="adUnderBar"></div>
+            </div>
+
+        </div>
+        <!-- 광고 영역 종료 -->
+
+
+        <!-- 게시판, 커뮤니티 영역 시작 -->
+        <div class="background">
+            <div class="top-content">
+                <div class="top-box1">
+                    <ul>
+                        <li><a href="#">공지사항</a></li>
+                        <li><a href="#">채용공고</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">스타포스트</a></li>
+                        <li><a href="#">뮤직어워드</a></li>
+                    </ul>
+                </div>
+                <div class="top-box2">
+                    <p class="title">다운로드 정보</p>
+                    <ul>
+                        <li><a href="#">멜론 스튜디오</a></li>
+                        <li><a href="#">Windows 플레이어</a></li>
+                        <li><a href="#">Mac 플레이어</a></li>
+                        <li><a href="#">iPad</a></li>
+                    </ul>
+                </div>
+                <div class="top-box3">
+                    <a href="#">
+                        <dl>
+                            <dt>뮤직 DNA</dt>
+                            <dd>좋아하는 가수와 친밀도 알아보기
+                            <br>
+                            "뮤지션과 나의 온도를 알아보세요!"
+                            </dd>
+                        </dl>
+                    </a>
+                    <a href="#">
+                        <dl>
+                            <dt>7월 플레이리스트</dt>
+                            <dd>유저들의 플레이리스트 보기
+                            <br>
+                            "다른 유저들의 플레이리스트를 보아요!"
+                            </dd>
+                        </dl>
+                    </a>
+                </div>
+            </div>
+            <div class="middle-content">
+                <div class="middle-box1">
+                    <dl>
+                        <dt>
+                            "오늘의 음악추천을 해드립니다!"
+                            <strong>멜론DJ</strong>
+                        </dt>
+                        <dd>
+                            <a href="#" class="on">
+                                <p>과몰입 주의! 연애 리얼리티 '환승연애2' BGM</p>
+                            </a>
+                            <a href="#" class="on">
+                                <p>HOT TRENDY 놓쳐선 안될 '해외 ROCK'</p>
+                            </a>
+                            <a href="#" class="on">
+                                <p>잠 못드는 밤, 무드등켜고 듣기좋은 감성 인디음악</p>
+                            </a>
+                            <a href="#" class="on">
+                                <p>달까지 달려~!! Night 드라이브 판타지~</p>
+                            </a>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="middle-box2">
+                    <p class="title1"><a href="magazine.html">매거진 바로가기</a></p>
+                    <div class="middle-box2-bottom">
+                        <div class="viewport">
+                            <ul class="slider">
+                                <li class="item"><a href="#">
+                                    <p class="bg-area">
+                                        <img src="images/event/event1.jpg" alt="event">
+                                    </p>
+                                </a></li>
+                                <li class="item"><a href="#">
+                                    <p class="bg-area">
+                                        <img src="images/event/event2.jpg" alt="event">
+                                    </p>
+                                </a></li>
+                                <li class="item"><a href="#">
+                                    <p class="bg-area">
+                                        <img src="images/event/event3.jpg" alt="event">
+                                    </p>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="control2">
+                        <div class="direction2">
+                            <a class="bx-next" href="#">Next</a> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-content">
+                <div class="bottom-box1">
+                    <a href="starpost.html" title="스타포스트" class="starpost">스타포스트 바로가기</a>
+                    <div class="bottom-box2-bottom">
+                        <div class="bx-viewport">
+                        <ul class="slider2">
+                            <li><a href="#">
+                                <p class="bg-area">
+                                    <img src="images/starpost/starpost1.PNG" alt="event2">
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <p class="bg-area">
+                                    <img src="images/starpost/starpost2.PNG" alt="event2">
+                                </p>
+                            </a></li>
+                            <li><a href="#">
+                                <p class="bg-area">
+                                    <img src="images/starpost/starpost3.PNG" alt="event2">
+                                </p>
+                            </a></li>                        
+                        </ul>
+                        </div>
+                    </div>
+                        <!-- <div class="control3">
+                            <div class="direction3">
+                                <a class="bx-next" href="#">Next</a> 
+                            </div>
+                        </div>  -->         
+            </div>
+                <div class="bottom-box2">
+                    <div class="bottom-box2-box1">
+                        <a href="#">
+                            <dl>
+                                <dt class="title1">인기있어요</dt>
+                                <dd>
+                                    "인기있는 노래들을"
+                                    <br>
+                                    "한 눈에 찾아보아요."
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                    <div class="bottom-box2-box2">
+                        <a href="#">
+                            <dl>
+                                <dt class="title1">멜론6.0 둘러보기</dt>
+                                <dd>
+                                    "멜론 6.0을"
+                                    <br>
+                                    "한 눈에 보아요."
+                                </dd>
+                            </dl>
+                        </a>
+                    </div>
+                </div>
+                <div class="bottom-box3">
+                    <div class="bottom-box3-top">
+                        
+                    </div>
+                    <div class="bottom-box3-bottom">
+                        <div class="viewport">
+                            <ul>
+                                <li><a href="#">
+                                    <p class="bg-area">
+                                        <img src="images/musicawards/awards1.PNG" alt="event3">
+                                    </p>
+                                </a></li>
+                                <li><a href="#">
+                                    <p class="bg-area">
+                                        <img src="images/event/event-image2.PNG" alt="event3">
+                                    </p>
+                                </a></li>
+                                <li><a href="#">
+                                    <p class="bg-area">
+                                        <img src="images/event/event-image3.PNG" alt="event3">
+                                    </p>
+                                </a></li>
+                                <li><a href="#">
+                                    <p class="bg-area">
+                                        <img src="images/event/event-image4.PNG" alt="event3">
+                                    </p>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 게시판, 커뮤니티 영역 종료 -->
+
+            <!-- 한눈에 보기 영역 시작 -->
+            <div class="last-bottom-content">
+                <div class="box-row">
+                    <div class="box-row-top"> 앨범 한 눈에 보기 </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="box-album">
+                    <img class="album image" src="images/album/album1.PNG" alt="album">
+                    <img class="album image" src="images/album/album2.PNG" alt="album">
+                    <img class="album image" src="images/album/album3.PNG" alt="album">
+                    <img class="album image" src="images/album/album4.PNG" alt="album">
+                    <img class="album image" src="images/album/album5.PNG" alt="album">
+                    <img class="album image" src="images/album/album6.PNG" alt="album">
+                    <img class="album image" src="images/album/album7.PNG" alt="album">
+                    <img class="album image" src="images/album/album8.PNG" alt="album">
+                    <img class="album image" src="images/album/album9.PNG" alt="album">
+                    <img class="album image" src="images/album/album10.PNG" alt="album">
+                    <img class="album image" src="images/album/album11.PNG" alt="album">
+                    <img class="album image" src="images/album/album12.PNG" alt="album">
+                    <img class="album image" src="images/album/album13.PNG" alt="album">
+                    <img class="album image" src="images/album/album14.PNG" alt="album">
+                    <img class="album image" src="images/album/album15.PNG" alt="album">
+                    <img class="album image" src="images/album/album16.PNG" alt="album">
+                    <img class="album image" src="images/album/album17.PNG" alt="album">
+                    <img class="album image" src="images/album/album18.PNG" alt="album">
+                    <img class="album image" src="images/album/album19.PNG" alt="album">
+                    <img class="album image" src="images/album/album20.PNG" alt="album">
+                    <img class="album image" src="images/album/album21.PNG" alt="album">
+                    <img class="album image" src="images/album/album22.PNG" alt="album">
+                    <img class="album image" src="images/album/album23.PNG" alt="album">
+                    <img class="album image" src="images/album/album24.PNG" alt="album">
+                </div>
+            </div>
+        </div>
+        <!-- 한눈에 보기 영역 종료 -->
+
+
+    </div>
+        
+    <!-- 푸터 영역 시작 -->
+    <div class="footer">
+        <div id="footerinner">
+            <div class="footer-nav">
+                <ul class="nav-link">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">영상정보처리기기 운영지침</a></li>
+                    <li class="point"><strong><a href="#">개인정보처리방침</a></strong></li>
+                    <li><a href="#">온라인도우미</a></li>
+                </ul>
+                <div class="family-link">
+                    <div class="family-site-area">
+                        <p>
+                            <button class="default" type="button">
+                                내부관련사이트
+                            </button>
+                        </p>
+                        <a class="btn-move" href="#" title="새창열기">이동</a>
+                    </div>
+                    <div class="family-site-area">
+                        <p>
+                            <button class="default" type="button">
+                                관련사이트
+                            </button>
+                        </p>
+                        <a class="btn-move" href="#" title="새창열기">이동</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-txt">
+                <ul class="sns-link">
+                    <li><a class="naver" href="#" target="_blank" title="네이버 새창열기"></a></li>
+                    <li><a class="daum" href="#" target="_blank" title="다음 새창열기"></a></li>
+                    <li><a class="facebook" href="#" target="_blank" title="페이스북 새창열기"></a></li>
+                    <li><a class="kakao" href="#" target="_blank" title="카카오스토리 새창열기"></a></li>
+                    <li><a class="youtube" href="#" target="_blank" title="유튜브 새창열기"></a></li>
+                    <li><a class="insta" href="#" target="_blank" title="인스타그램 새창열기"></a></li>
+                </ul>
+                <div class="footer_txt">
+                    <p class="txt">본 홈페이지에 게시된 이메일주소가 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+                    <p class="addr">26464 강원도 원주시 건강로 32(반곡동) 멜론 <span>고객센터 :1577-1000(발신자 부담) 업무시간 : 09시~18시<em>(월~금)</em></span></p>
+                    <p class="copy">Copyright @ 2020 by National Health Insurance Service. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <!-- 푸터 영역 종료 -->
+
+    <!-- 퀵 메뉴 영역 시작 -->
+    <div id="quick-menu">
+        <ul id="navigation">
+            <li>
+                <a href="#">
+                    <span>
+                        <i class="iconset ico-release-info"></i>
+                    </span>
+                    "정보공개"
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <i class="iconset ico-civil-complaint"></i>
+                    </span>
+                    "민원상담"
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <i class="iconset ico-customer-center"></i>
+                    </span>
+                    "고객센터"
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <i class="iconset ico-customer-security"></i>
+                    </span>
+                    "보안프로그램"
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <i class="iconset ico-form"></i>
+                    </span>
+                    "서식자료실"
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <i class="iconset ico-help-center"></i>
+                    </span>
+                    "홈페이지"
+                    <br>
+                    "도움센터"
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span>
+                        <i class="iconset ico-kko"></i>
+                    </span>
+                    "챗봇/채팅 상담"
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- 퀵 메뉴 영역 종료 -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>멜론</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/join.css">
+    <link rel="icon" href="images/eba99ceba1a020ec9584ec9db4ecbd982e706e67.png">
+</head>
+<body>
+    <!-- wrapper 영역 시작 -->
+    <div id="wrapper">
+        <!-- 헤더 영역 시작 -->
+        <header>
+            <h1 class="logo">
+                <a href="index.html">
+                    <img src="images/logo/melonlogo.jpg" alt="melon">
+                </a>
+            </h1>
+            <ul class="infoLink">
+                <li><a href="#"></a>이용권구매</li>
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">공지사항</a></li>
+            </ul>
+            <nav role="navigation">
+                <h2 class="hidden">메인메뉴</h2>
+                <ul class="mainMenu">
+                    <li><a href="#">멜론차트</a>
+                    </li>
+                    <li><a href="#">최신음악</a>
+                    </li>
+                    <li><a href="#">장르음악</a>
+                    </li>
+                    <li><a href="#">멜론DJ</a>
+                    </li>
+                    <li><a href="#">멜론TV</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <!-- 헤더 영역 종료 -->
+
+        <!-- 회원가입 영역 시작 -->
+
+        <div id="contentsArea">
+            <h2>회원가입</h2>
+            <p class="warnRequire">회원정보를 모두 입력해주세요.</p>
+            
+            <form action="join.jsp" method="post" id="joinForm" name="joinForm">
+                <fieldset>
+                    <legend>회원정보 입력 폼</legend>
+                    <div class="inputNameArea">
+                        <label for="userName">이름</label>
+                        <input type="text" name="userName" id="userName" required>
+                    </div>
+                    <div class="inputBirthArea">
+                        <label for="userBirth">생년월일</label>
+                        <input type="text" name="userBirth" id="userBirth" required placeholder="예) 19990909">
+                    </div>
+                    <div class="inputTelArea">
+                        <label for="userTel">전화번호</label>
+                        <input type="tel" name="userTel" id="userTel" required placeholder="예) 010-0000-0000">
+                    </div>
+                    <div class="inputIdArea">
+                        <label for="userId">아이디</label>
+                        <input type="text" name="userId" id="userId" required>
+                        <a href="#" class="userIdCheck">아이디 중복 확인</a>
+                    </div>
+                    <div class="inputPwArea">
+                        <label for="userPw">비밀번호</label>
+                        <input type="password" name="userPw" id="userPw" required placeholder="">
+                        <p class="pwRegxCheck"></p>
+                        <p>비밀번호는 영문, 숫자를 혼합하여 8자~12자로 입력해주세요.</p>
+                    </div>
+                    <div class="inputPwCheckArea">
+                        <label for="userPwCheck">비밀번호 확인</label>
+                        <input type="password" name="userPwCheck" id="userPwCheck" required>
+                        <p class="pwEqualCheck"></p>
+                    </div>
+                    <div class="inputEmailArea">
+                        <label for="userEmailId">이메일</label>
+                        <input type="text" name="userEmailId" id="userEmailId" required>
+                        <span>@</span>
+                        <input type="text" name="userEmailServer" id="userEmailServer" required>
+                        <select id="emailServer">
+                            <option value="">직접입력</option>
+                            <option value="gmail.com">gmail.com</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="nate.com">nate.com</option>
+                            <option value="yahoo.com">yahoo.com</option>
+                            <option value="hanmail.net">hanmail.net</option>
+                        </select>
+                    </div>
+                    <div class="inputReceiveArea">
+                        <label for="userInforeceiveEmail" id="userInforeceive">정보 수신 여부</label>
+                        <input type="checkbox" name="userInforeceiveEmail" id="userInforeceiveEmail" checked><label for="userInforeceiveEmail">이메일</label>
+                        <input type="checkbox" name="userInforeceiveSMS" id="userInforeceiveSMS" checked><label for="userInforeceiveSMS">SMS</label>
+                    </div>
+                    <div class="btnJoinArea">
+                        <button type="submit" class="btnJoin">회원가입</button>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+        
+    <!-- 푸터 영역 시작 -->
+    <div class="footer">
+        <div id="footerinner">
+            <div class="footer-nav">
+                <ul class="nav-link">
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">영상정보처리기기 운영지침</a></li>
+                    <li class="point"><strong><a href="#">개인정보처리방침</a></strong></li>
+                    <li><a href="#">온라인도우미</a></li>
+                </ul>
+                <div class="family-link">
+                    <div class="family-site-area">
+                        <p>
+                            <button class="default" type="button">
+                                내부관련사이트
+                            </button>
+                        </p>
+                        <a class="btn-move" href="#" title="새창열기">이동</a>
+                    </div>
+                    <div class="family-site-area">
+                        <p>
+                            <button class="default" type="button">
+                                관련사이트
+                            </button>
+                        </p>
+                        <a class="btn-move" href="#" title="새창열기">이동</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-txt">
+                <ul class="sns-link">
+                    <li><a class="naver" href="#" target="_blank" title="네이버 새창열기"></a></li>
+                    <li><a class="daum" href="#" target="_blank" title="다음 새창열기"></a></li>
+                    <li><a class="facebook" href="#" target="_blank" title="페이스북 새창열기"></a></li>
+                    <li><a class="kakao" href="#" target="_blank" title="카카오스토리 새창열기"></a></li>
+                    <li><a class="youtube" href="#" target="_blank" title="유튜브 새창열기"></a></li>
+                    <li><a class="insta" href="#" target="_blank" title="인스타그램 새창열기"></a></li>
+                </ul>
+                <div class="footer_txt">
+                    <p class="txt">본 홈페이지에 게시된 이메일주소가 수집되는 것을 거부하며, 이를 위반 시 정보통신망법에 의해 처벌됨을 유념하시기 바랍니다.</p>
+                    <p class="addr">26464 강원도 원주시 건강로 32(반곡동) 멜론 <span>고객센터 :1577-1000(발신자 부담) 업무시간 : 09시~18시<em>(월~금)</em></span></p>
+                    <p class="copy">Copyright @ 2020 by National Health Insurance Service. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!-- 푸터 영역 종료 -->
+    </div>
+</body>
+</html>

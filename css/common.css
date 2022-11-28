@@ -1,0 +1,439 @@
+@charset "utf-8";
+/* 초기화 */
+html, body, div, header, nav, section, aside, article, footer, figure,
+figcaption, legend, ul, ol, li, dl, dt, dd, h1, h2, h2, p {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+    display: block;
+}
+img {
+    border: 0;
+    border-style: none;
+    vertical-align: middle;
+}
+div {
+    display: block;
+}
+em {
+    font-style: normal;
+}
+button, .btn {
+    border: 1px solid red;
+    display: inline-block;
+    zoom: 1;
+    margin: 0;
+    padding: 0;
+    background: 0;
+    border: 0;
+    text-decoration: none !important;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+/* 숨김 콘텐츠 */
+.hidden, legend, caption {
+    position: absolute;
+    left: -9999px;
+}
+
+
+
+/* 링크 스타일 */
+a:link {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+a:visited {
+    color: #1a1a1a;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color: #f00;
+    text-decoration: none;
+}
+
+/* 기본 스타일 */
+body {
+    color: #1DDB16;
+    background-color: #fff;
+    font-size: 0.75em; /* 12px */
+    line-height: 1.2;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 건너뛰기 링크 */
+#skipNav {
+    position: absolute;
+    left: -9999px;
+}
+#skipNav:focus {
+    left: 50%;
+    margin: 3px 0 0 -3em;
+    padding: 5px 15px;
+    background-color: #1DDB16;
+    color: #fff;
+    outline: 0;
+    z-index: 10;
+}
+
+/* 전체적인 레이아웃 설계 */
+header, #contentsArea, #footerInner {
+    width: 1300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#wrapper {
+    background-repeat: no-repeat;
+    background-position: center top;                     
+}
+
+/* 헤더 영역 시작 */
+header {
+    height: 130px;
+    position: relative;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    padding: 0 30px;
+}
+.logo {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 33px;
+    left: 40px;
+}
+.logo a img {
+    width: 250px;
+    height: 70px;
+}
+.infoLink {
+    text-align: right;
+}
+.infoLink > li {
+    display: inline-block;
+    padding: 8px 0 7px 4px;
+}
+.infoLink a::before {
+    content: ":";
+    padding-right: 8px;
+}
+.infoLink > li:first-child a::before {
+    content: "";
+}
+
+.mainMenu {
+    margin-top: 18px;
+    padding-left: 400px;
+    height: 100px;
+}
+.mainMenu > li {
+    position: relative;
+    margin-top: 18px;
+}
+.mainMenu li, .mainMenu a {
+    display: inline-block;
+    margin: 8px;
+}
+.mainMenu > li > a {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 1.7em;
+    padding: 15px 20px 14px;
+    color: black;
+    letter-spacing: 1px;
+    border-left: 1px solid #fff;
+    transition: all 0.2s linear;
+}
+.mainMenu > li > a:hover, .mainMenu > li > a:focus {
+    color: rgb(9, 248, 25);
+    transform: scale(1.4);
+}
+.mainMenu > li > a:hover::after, .mainMenu > li > a:focus::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    position: relative;
+    top: 12px;
+}
+.mainMenu ul {
+    position: absolute;
+    z-index: 10;
+    white-space: nowrap;
+}
+.mainMenu ul a {
+    padding: 8px 0 7px 15px;
+}
+.mainMenu ul a::before {
+    font-family: "WebcafeIcon";
+    content: "r";
+    color: #666;
+    position: relative;
+    top: 2px;
+}
+.mainMenu ul a:hover::before, .mainMenu ul a:focus::before {
+    content: "c";
+    color: #f00;
+}
+.mainMenu > li:hover ul {
+    display: block;
+}
+.aboutHTML {
+    display: none;
+}
+.aboutCSS {
+    display: none;
+}
+.webStandard {
+    display: none;
+}
+.webAccessibility {
+    display: none;
+    left: -100px;
+}
+.qna {
+    display: none;
+    left: -150px;
+}
+.archive {
+    display: none;
+    right: 0;
+}
+/*헤더 영역 종료 */
+
+/* 메인 콘텐츠 영역 시작 */
+#contentsArea {
+    min-height: 2300px;
+    padding: 30px 30px 30px 30px;
+    background-color: #fff;
+    flex-direction: row;
+}
+/* 메인 콘텐츠 영역 종료 */
+
+
+
+/* 푸터 영역 시작 */
+.footer {
+    padding: 40px 0 70px 0;
+    background-color: #f6f6f6;
+    border-top: 1px solid #e4e8ed;
+}
+#footerinner {
+    width: 1180px;
+    margin: 0 auto;
+    position: relative;
+}
+.inner::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+.footer-nav::after {
+    clear: both;
+    display: block;
+    content: "";
+}
+.f-mobile {
+    display: none;
+}
+.nav-link {
+    overflow: hidden;
+    float: left;
+}
+.nav-link li:first-child {
+    margin-left: 0;
+}
+.nav-link li {
+    float: left;
+    margin-left: 20px;
+}.nav-link li a {
+    color: #6c6d73;
+    font-size: 13px;
+    line-height: 40px;
+}
+.point a {
+    color: #d7021b;
+}
+.family-link {
+    float: right;
+    height: 40px;
+}
+.family-site-area:first-child {
+    margin-right: 10px;
+}
+.family-site-area {
+    display: inline-block;
+    position: relative;
+    width: 244px;
+}
+.family-site-area p {
+    overflow: hidden;
+    background: #fff;
+    border-radius: 5px;
+}
+.family-site-area p button {
+    overflow: hidden;
+    float: left;
+    position: relative;
+    width: calc(100% - 46px);
+    padding: 0 30px 0 20px;
+    background: #fff;
+    font-size: 13px;
+    line-height: 40px;
+    text-align: left;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.btn-move {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 46px;
+    border-left: 1px solid#e1e3e6;
+    font-size: 13px;
+    text-align: center;
+    line-height: 40px;
+}
+.footer-txt {
+    position: relative;
+    padding: 15px 0 0;
+    margin: 30px 0 0;
+}
+.sns-link {
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    right: 0;
+}
+.sns-link li:first-child {
+    margin: 0;
+}
+.sns-link li {
+    float: left;
+    margin-left: 12px;
+}
+.sns-link li a {
+    display: block;
+    width: 32px;
+    height: 32px;
+    border-radius: 15px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-indent: -9999px;
+}
+.sns-link li a.naver {
+    background-image: url(images/ico-naver-small.png);
+}
+.sns-link li a.daum {
+    background-image: url(images/ico-daum-small.png);
+}
+.sns-link li a.facebook {
+    background-image: url(images/ico-facebook-small.png);
+}
+.sns-link li a.kakao {
+    background-image: url(images/ico-kakao-small.png);
+}
+.sns-link li a.youtube {
+    background-image: url(images/ico-youtube-small.png);
+}
+.sns-link li a.insta {
+    background-image: url(images/ico-insta-small.png);
+}
+
+.footer_txt p {
+    color: #6c6d73;
+    font-size: 13px;
+    line-height: 26px;
+}
+/* 푸터 영역 종료 */
+
+/* 퀵 메뉴 영역 시작 */
+#quick-menu {
+    width: 40px;
+    position: fixed;
+    top: 260px;
+    right: 0;
+    z-index: 2;
+}
+#quick-menu ul li:first-child {
+    margin-top: 0;
+}
+#quick-menu ul li {
+    margin-top: 1px;
+    position: relative;
+}
+#quick-menu ul li a {
+    display: block;
+    position: relative;
+    width: 150px;
+    height: 40px;
+    padding: 0 0 0 40px;
+    background-color: #44465c;
+    font-size: 13px;
+    color: #fff;
+    padding-right: 12px;
+    line-height: 40px;
+}
+#quick-menu ul li a span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+}
+.iconset {
+    overflow: hidden;
+    display: inline-block;
+    margin: -1px 0 0 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    vertical-align: middle;
+    text-indent: -9999px;
+}
+.ico-release-info {
+    width: 15px;
+    height: 17px;
+    background: url(images/fiexdlogo/ico-release-info.png) no-repeat;
+}
+.ico-civil-complaint {
+    width: 18px;
+    height: 18px;
+    background: url(images/fiexdlogo/ico-civil-complaint.png) no-repeat;
+}
+.ico-customer-center {
+    width: 16px;
+    height: 16px;
+    background: url(images/fiexdlogo/ico-customer-center.png);
+}
+.ico-customer-security {
+    width: 16px;
+    height: 18px;
+    background: url(images/fiexdlogo/ico-customer-security.png);
+}
+.ico-form {
+    width: 15px;
+    height: 16px;
+    background: url(images/fiexdlogo/ico-form.png);
+}
+.ico-help-center {
+    width: 17px;
+    height: 17px;
+    background: url(images/fiexdlogo/ico-help-center.png);
+}
+.ico-kko {
+    width: 17px;
+    height: 16px;
+    background: url(images/fiexdlogo/ico-kakao-on.png);
+    background-size: 100%;
+}

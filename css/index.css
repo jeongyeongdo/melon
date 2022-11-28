@@ -1,0 +1,739 @@
+@charset "utf-8";
+
+/* infoArea 영역 시작 */
+#infoArea {
+    max-width: 1270px;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* infoArea 영역 종료 */
+
+/* 검색 영역 시작 */
+.search {
+    width: 650px;
+    float: left;
+    padding: 20px 0 0;
+    margin: 30px 0 0 0px;
+    animation: searchs 2s;
+}
+@keyframes searchs {
+    from {
+        left: -300px;
+    }
+    to {
+        left: 0px;
+    }
+}
+.search > form {
+    padding-right: 90px;
+    position: relative;
+    margin-bottom: 20px;
+    z-index: 2;
+    animation: searchs 2s;
+}
+.form-write > input {
+    width: 530px;
+    line-height: 58px;
+    border: 3px solid #1DDB16;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 0 0 0 15px;
+    animation: searchs 2s;
+}
+.button-search {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #1DDB16 url(images/icon/ico-search.png) no-repeat center;
+    text-indent: -9999px;
+    border-radius: 40px;
+    box-shadow: 0 5px 10px 0 #2F9D27;
+    transition: all 0.2s linear;
+}
+.button-search:hover {
+    transform: scale(1.5);
+}
+/* 검색 영역 종료 */
+
+/* 인기차트 영역 시작 */
+.hotLink {
+    position: absolute;
+    bottom: 70px;
+    right: 20px;
+    width: 400px;
+    float: right;
+    padding: 20px 0 0;
+    margin: 30px 0 0 0px;
+}
+.hotLink h2 {
+    font-size: 1.2em;
+}
+.hotLink span {
+    color: #1DDB16;
+}
+.hotLink .more {
+    position: absolute;
+    top: 20px;
+    right: 6px;
+    padding: 2px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.hotLink ol {
+    margin-top: 5px;
+    padding: 0;
+    overflow: hidden;
+}
+.hotLink li {
+    position: relative;
+    margin-top: 10px;
+    counter-increment: number;
+}
+.hotLink li:last-child {
+    margin-bottom: 2px;
+}
+.hotLink li::before {
+    content: counter(number, decimal);
+    padding: 2px 7px;
+    background-color: #1DDB16;
+    border-radius: 10px;
+    margin-right: 5px;
+    color: #fff;
+}
+.hotLink em {
+    float: right;
+    width: 8px;
+    height: 0;
+    overflow: hidden;
+    padding-top: 12px;
+    background: url(images/icon2/rank.png) no-repeat;
+}
+.hotLink .up {
+    background-position: 0 0;
+}
+.hotLink .stop {
+    background-position: 0 50%;
+}
+.hotLink .down {
+    background-position: 0 100%;
+}
+/* 인기차트 영역 종료 */
+
+
+/* 광고 영역 시작 */
+#advertiseArea{
+    margin-top: 30px;
+    min-width: 500px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.sliderAdvertiseImage {
+    width: 14000px;
+    height: 630px;
+    position: relative;
+}
+.advertiseImage {
+    width: 1250px;
+    height: 300px;
+    float: left;
+}
+.btnAd {
+    position: relative;
+    z-index: 10;
+    top: -100px;
+}
+.btnAd > div{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-indent: 100px;
+    cursor: pointer;
+}
+.btnAd > div:first-child {
+    background-image: url(images/icon/ad_prev.png);
+    background-position: -10px -10px;
+    position: absolute;
+    left: 10px;
+    top: -430px;
+}
+.btnAd > div:last-child {
+    background-image: url(images/icon/ad_next.png);
+    background-position: -130px -10px;
+    position: absolute;
+    left: 1160px;
+    top: -430px;
+}
+.underBarArea{
+    position: absolute;
+    top: 580px;
+    width: 100%;
+    text-align: center;
+}
+.adUnderBar {
+    display: inline-block;
+    width: 80px;
+    height: 4px;
+    border: none;
+    border-radius: 20px / 5px;
+    background-color: rgb(88, 88, 88);
+    margin-right: 10px;
+    cursor: pointer;
+}
+.adUnderBar.active {
+    background-color: rgb(9, 248, 21);
+}
+/* 광고 영역 종료 */
+
+
+/* 커뮤니티,게시판 영역 시작 */
+
+/* 공지사항, 다운로드, 뮤직DNA 영역 시작 */
+.background {
+    margin-top: 10px;
+    height: 1550px;
+    padding: 150px 20px 55px 20px;
+}
+.top-content {
+    width: 100%;
+    height: 370px;
+    margin: 0 auto;
+}
+.top-content > div:first-child {
+    margin-left: 0 !important;
+}
+.top-content > div {
+    float: left;
+    margin-left: 5.3%;
+}
+
+
+.top-box1 {
+    width: 330px;
+    height: 320px;
+    border-radius: 50px 20px 20px 20px;
+    background-color: #ef6266;
+    padding-top: 25px;
+}
+.top-box1 ul {
+    list-style: none;
+    margin: 15px 15px 0 15px;
+    padding: 0;
+}
+.top-box1 ul li {
+    border-bottom: 1px solid#f18f91;
+    position: relative;
+}
+.top-box1 ul li a:hover {
+    transform: scale(1.4);
+}
+.top-box1 ul li a {
+    height: 52px;
+    line-height: 52px;
+    color: #fff;
+    display: block;
+    padding: 0 0 0 40px;
+    font-size: 19px;
+    font-weight: 700;
+    margin-right: 40px;
+    transition: all 0.2s linear;
+}
+.top-box1 ul li:nth-child(1) a {
+    background: url(images/icon/icon_news_area_01.png) no-repeat right 12px;
+}
+.top-box1 ul li:nth-child(2) a {
+    background: url(images/icon/icon_news_area_02.png) no-repeat right 8px;
+}
+.top-box1 ul li:nth-child(3) a {
+    background: url(images/icon/icon_news_area_03.png) no-repeat right 10px;
+}
+.top-box1 ul li:nth-child(4) a {
+    background: url(images/icon/icon_news_area_05.png) no-repeat right 10px;
+}
+.top-box1 ul li:nth-child(5) a {
+    background: url(images/icon/icon_news_area_04.png) no-repeat right 10px;
+}
+.title {
+    margin-left: 80px;
+    margin-top: 15px;
+    font-size: 21px;
+    color: #3a3a4a;
+    font-weight: 700;
+    margin-bottom: 23px;
+}
+.top-box2 {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #e1e3e6;
+    background-color: #fff;
+    border-radius: 20px 60px 20px 20px;
+    padding: 35px 39px 0;
+}
+
+.top-box2 ul li {
+    border-bottom: 1px solid #f0edec;
+    position: relative;
+    top: 20px;
+    text-align: center;
+}
+.top-box2 ul li a {
+    height: 45px;
+    line-height: 45px;
+    color: #3a3a4a;
+    display: inline-block;
+    padding-right: 17px;
+    background: url(images/icon/ad_next.png) no-repeat right 16px;
+    transition: all 0.2s linear;
+}
+.top-box2 ul li a:hover {
+    transform: scale(1.4);
+}
+.top-box3 {
+    width: 350px;
+    height: 340px;
+    background: #1DDB16 url(images/bg-guarantee.png) no-repeat right bottom;
+    border-radius: 20px 20px 60px 20px;
+}
+.top-box3 a {
+    margin-top: 15px;
+    width: 100%;
+    height: 30%;
+    display: block;
+    padding: 35px 39px 0;
+}
+.top-box3 dl dt {
+    font-size: 21px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 10px;
+    animation: dll 5s ease-out;
+    transition: all 0.2s linear;
+}
+.top-box3 dl dt:hover {
+    transform: scale(1.2);
+}
+.top-box3 dl dd {
+    font-size: 15px;
+    color: #fff;
+    line-height: 26px;
+    animation: dll 5s ease-out forwards;
+}
+/* 공지사항, 다운로드, 뮤직DNA 영역 시작 */
+
+/* 멜론DJ, 이벤트 영역 시작 */
+.middle-content {
+    width: 100%;
+    margin: 62px auto 0;
+    margin-top: 45px;
+    overflow: hidden;
+}
+.middle-box1 {
+    background: url(images/bg-notice.png);
+    padding: 30px 30px 30px 30px;
+    width: 59.3%;
+    margin-right: 2.3%;
+    border-radius: 50px 20px 20px 20px;
+    background-size: 100% 100%;
+}
+.middle-content > div {
+    height: 290px;
+    float: left;
+}
+.middle-box1 dl {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    animation: dll 13s;
+}
+@keyframes dll {
+    from {
+        left: -500px;
+        opacity: 0.5;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+    }
+}
+
+@keyframes dllback {
+    from {
+        left: 0px;
+        opacity: 1;
+    }   
+    to {
+        left: -500px;
+        opacity: 0;
+    }
+}
+.middle-box1 dl dt {
+    font-size: 17px;
+    line-height: 32px;
+    display: inline-block;
+    color: #3a3a4a;
+    font-weight: 700;
+    padding-left: 59px;
+    background: url(images/ico-notice.png) no-repeat left center;
+    text-align: left;
+}
+.middle-box1 dl dt strong {
+    font-size: 23px;
+    display: block;
+}
+.middle-box1 dl dd {
+    display: block;
+    border-top: 1px solid #edfd03;
+    padding-top: 50px;
+    margin-top: 20px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.middle-box1 dl dd a {
+    display: block;
+    margin-top: 15px;
+    position: relative;
+    animation: dll 3s ease-out;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.middle-box1 dl dd a:first-child {
+    margin-top: 0;
+}
+.middle-box1 dl dd a p {
+    height: 27px;
+    font-size: 16px;
+    color: #3a3a4a;
+    display: inline-block;
+    letter-spacing: -1px;
+    transition: all 0.2s linear;
+}
+.middle-box1 dl dd a p:hover {
+    transform: scale(2.2);
+}
+.middle-box2 {
+    width: 22%;
+    background-color: #fff;
+    border: 1px solid #e1e3e6;
+    padding: 42px 42px 0;
+    border-radius: 20px 20px 55px 20px;
+    margin-left: 40px;
+    position: relative;
+}
+.title1 {
+    margin-left: 5px;
+    font-size: 21px;
+    color: #3a3a4a;
+    margin-bottom: 10px;
+    font-weight: 700;
+    transition: all 0.2s linear;
+}
+.title1:hover {
+    transform: scale(1.2) ;
+}
+.middle-box2-top {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    padding-right: 82px;
+}
+.middle-box2-top span em {
+    font-weight: 700;
+    color: #3a3a4a;
+    font-size: 21px;
+    font-family: 'NanumBold';
+}
+.middle-box2-bottom {
+    width: 260px;
+    overflow: hidden;
+    position: relative;
+    top: 22px;
+    left: 5px;
+    height: 190px;
+}
+.middle-box2-bottom ul {
+    width: 2215px;
+    position: relative;
+}
+.middle-box2-bottom ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 260px;
+}
+.middle-box2-bottom li img {
+    height: 190px;
+    width: 100%;
+    border-radius: 14px;
+}
+
+.bottom-content {
+    width: 1500px;
+    height: 410px;
+    margin: 58px auto 0;
+}
+.bottom-content > div {
+    float: left;
+    margin-left: 5%;
+}
+.bottom-content > div:first-child {
+    margin-left: 0;
+}
+.bottom-box1 {
+    width: 230px;
+    height: 370px;
+    padding: 37px 39px 0;
+    background-color: #fff;
+    border-radius: 20px 20px 20px 55px;
+    border: 1px solid #e1e3e6;
+    position: relative;
+}
+.starpost {
+    position: absolute;
+    top: 75px;
+    margin-left: 15px;
+    font-size: 21px;
+    color: #3a3a4a;
+    font-weight: 700;
+    transition: all 0.2s linear;
+}
+.starpost:hover {
+    transform: scale(1.4);
+}
+.bottom-box2-top {
+    position: absolute;
+    top: 350px;
+    left: 100px;
+    padding-right: 82px;
+}
+.bottom-box2-top span em {
+    font-weight: 700;
+    color: #3a3a4a;
+    font-size: 21px;
+    font-family: 'NanumBold';
+}
+.bottom-box2-bottom {
+    width: 210px;
+    height: 240px;
+    top: 100px;
+    left: 10px;
+    overflow: hidden; 
+    position: relative;
+}
+.bottom-box2-bottom ul {
+    width: 2215px;
+    position: relative;
+    transition-duration: 0s;
+}
+.bottom-box2-bottom ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 210px;
+}
+.bottom-box2-bottom li img {
+    height: 190px;
+    width: 100%;
+    border-radius: 14px;
+}
+
+.bottom-content > div .title {
+    margin-left: 60px;
+    display: block;
+    font-size: 21px;
+    color: #3a3a4a;
+    margin-bottom: 19px;
+    font-weight: 700;
+}
+.bottom-box2-box1 {
+    background: #fff url(images/bg-organization.png) no-repeat right top;
+    border-radius: 20px 55px 20px 20px;
+    margin-bottom: 30px;
+}
+.bottom-box2 > div {
+    width: 300px;
+    height: 155px;
+    border: 1px solid #e1e3e6;
+    padding: 33px 39px 0;
+}
+.bottom-box2-box1 a, .bottom-box2-box2 a {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+    display: block;
+}
+.bottom-box2-box1 dd {
+    color: #6e7174;
+}
+.bottom-box2-box2 {
+    background: #fff url(images/bg-center.png) no-repeat right bottom;
+    border-radius: 55px 20px 20px 20px;
+}
+.bottom-box3 {
+    background: url(images/musicawards/awards1.PNG);
+    width: 270px;
+    height: 370px;
+    background-color: #fff;
+    border: 1px solid #e1e3e6;
+    padding: 33px 39px 0;
+    border-radius: 20px 20px 55px 20px;
+}
+.bottom-box3-top {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    padding-right: 82px;
+}
+.bottom-box3-top span em {
+    font-weight: 700;
+    color: #3a3a4a;
+    font-size: 21px;
+    font-family: 'NanumBold';
+}
+.bottom-box3-bottom {
+    width: 250px;
+    overflow: hidden;
+    position: relative;
+    height: 300px;
+}
+.bottom-box3-bottom ul li {
+    float: left;
+    list-style: none;
+    position: relative;
+    width: 250px;
+    height: 500px;
+}
+.bottom-box3-bottom li img {
+    height: 250px;
+    width: 100%;
+    border-radius: 14px;
+}
+.bottom-content > div .title5 {
+    margin-left: 60px;
+    display: block;
+    font-size: 21px;
+    color: #3a3a4a;
+    margin-bottom: 19px;
+    font-weight: 700;
+}
+
+/* 앨범 한 눈에 보기 영역 시작 */
+.last-bottom-content {
+    height: 250px;
+    margin-top: 80px;
+    border: 1px solid #ccc;
+}
+.box-row {
+    background-color: #252525;
+    color: white;
+    border-color: #252525;
+    padding: 10px 20px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+}
+.box-row-top {
+    float: left;
+}
+.clear {
+    clear: both;
+}
+.box-album {
+    height: 100px;
+    line-height: 100%;
+    padding: 4px 0 0 30px;
+}
+.box-album > img {
+    margin: 20px 24px 0 0;
+    width: 68px;
+    height: 68px;
+    border-radius: 2px;
+    opacity: 1;
+    transition: all 0.2s linear;
+}
+.box-album > img:hover {
+    transform: scale(2.5);
+    cursor: pointer;
+}
+
+/* 앨범 한 눈에 보기 영역 종료 */
+
+/* 버튼 기능 시작 */
+
+ /* 버튼 1 */
+.control1 {
+    position: absolute;
+    top: 150px;
+    right: 1px;
+}
+.control1 > div a {
+    width: 10px;
+    height: 12px;
+    float: left;
+    text-indent: -9999px;
+    display: block;
+}
+.bx-prev {
+    background: url(images/icon/arrow-banner-l.png) no-repeat;
+    margin-right: 41px;
+}
+.bx-next {
+    background: url(images/icon/arrow-banner-r.png) no-repeat;
+}
+.auto1 {
+    position: absolute;
+    left: 24px;
+}
+.auto1 a {
+    background: url(images/icon/slide-pause.png);
+    width: 10px;
+}
+/* 버튼 1 */ 
+/* 버튼 2 */
+.control2 {
+    position: absolute;
+    top: 49px;
+    right: 135px;
+}
+.control2 > div a {
+    width: 10px;
+    height: 12px;
+    float: left;
+    text-indent: -9999px;
+    display: block;
+}
+.auto2 {
+    position: absolute;
+    left: 24px;
+}
+.auto2 a {
+    background: url(images/icon/slide-pause.png);
+    width: 10px;
+}
+/* 버튼 3 */
+.control3 {
+    position: absolute;
+    top: 64px;
+    right: 70px;
+}
+.control3 > div a {
+    width: 10px;
+    height: 12px;
+    float: left;
+    text-indent: -9999px;
+    display: block;
+}
+.auto3 {
+    position: absolute;
+    left: 24px;
+}
+.auto3 a {
+    background: url(images/icon/slide-pause.png);
+    width: 10px;
+}
+/* 버튼 3 */
+/* 버튼 기능 종료 */
+
+
